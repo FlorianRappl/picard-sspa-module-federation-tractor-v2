@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "rspack serve --mode development",
+    "build": "rspack build --mode production"
+  },
+  "keywords": [],
+  "author": "Florian Rappl",
+  "license": "MIT",
+  "dependencies": {
+    "picard-js": "0.3.0-pre.22"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^0.7.5",
+    "@rspack/core": "^0.7.5"
+  }
+}
