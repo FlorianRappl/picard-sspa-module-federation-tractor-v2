@@ -45,13 +45,15 @@ This implementation is deliberately kept simple to focus on the micro frontends 
 
 ### Performance
 
-Several performance optimizations could still be applied, however, in the out-of-the-box state with three micro frontends and multiple components / pages included we'll end up with a lighthouse score of 91/100, which is okay-ish.
+Several performance optimizations could still be applied, however, in the out-of-the-box state with three micro frontends and multiple components / pages included we'll end up with a lighthouse score of 94/100, which is alright.
 
 ![Lighthouse Score](./lighthouse.png)
 
-As a comparison a most lightweight SSR-only solution using the same codebase would be around 99/100. Another SPA sample that uses [Picard.js](https://picard.js.org/) with Native Federation ended up at 88/100. Using a full framework like [Piral](https://www.piral.io) (which also includes a much cleaner codebase and a more powerful routing engine) ends up at 100/100, as did exclusive Module Federation.
+As a comparison a most lightweight SSR-only solution using the same codebase would be around 99/100. Another SPA sample that also uses [Picard.js](https://picard.js.org/) with Native Federation ended up at 88/100. Thus, Module Federation actually performs slightly better than Native Federation - which is mainly due to the shim overhead (the shim is required to establish dynamic import maps, which is a feature that may or may not come in the future).
 
-As a result, the observed performance penalty of using single-spa on top of Module Federation is significant (a drop of 9 lighthouse points). It should be discussed, if removing the need for a framework-converter library is something viable.
+Using a full framework like [Piral](https://www.piral.io) (which also includes a much cleaner codebase and a more powerful routing engine) ends up at 100/100, as did exclusive Module Federation. Therefore, the use of Picard (at this early point in time) puts a slight performance penalty on the page.
+
+As a comparison, the performance penalty of single-spa alone (i.e., not wrapped in the more efficient Picard.js) would be higher, losing another 3 lighthouse points in combination with Module Federation (or 5 in combination with SystemJS).
 
 ## How to run locally
 
