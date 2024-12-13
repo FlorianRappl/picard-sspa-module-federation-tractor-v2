@@ -1,0 +1,108 @@
+{
+  "id": "checkout",
+  "name": "checkout",
+  "metaData": {
+    "name": "checkout",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "decide"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "checkout",
+    "pluginVersion": "0.3.5",
+    "publicPath": "auto"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react-dom/client",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "checkout:react-dom/client",
+      "assets": {
+        "js": {
+          "async": [
+            "512.js"
+          ],
+          "sync": [
+            "478.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [
+        "page:/product/:id"
+      ]
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "checkout:react",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "512.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [
+        "page:/product/:id"
+      ]
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": "page:/product/:id",
+      "id": "checkout:page:/product/:id",
+      "name": "page:/product/:id",
+      "requires": [
+        "react-dom/client",
+        "react"
+      ],
+      "file": "src/ProductPage.jsx",
+      "assets": {
+        "js": {
+          "sync": [
+            "__federation_expose_page:__product__:id.js"
+          ],
+          "async": [
+            "512.js",
+            "478.js"
+          ]
+        },
+        "css": {
+          "sync": [
+            "__federation_expose_page:__product__:id.css"
+          ],
+          "async": []
+        }
+      }
+    }
+  ]
+}

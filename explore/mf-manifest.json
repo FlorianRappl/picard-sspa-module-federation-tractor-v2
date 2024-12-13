@@ -1,0 +1,218 @@
+{
+  "id": "explore",
+  "name": "explore",
+  "metaData": {
+    "name": "explore",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "explore"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "explore",
+    "pluginVersion": "0.3.1",
+    "publicPath": "auto"
+  },
+  "shared": [
+    {
+      "id": "explore:react-dom/client",
+      "name": "react-dom/client",
+      "version": "18.3.1",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [
+            "540.js"
+          ],
+          "sync": [
+            "338.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "explore:react",
+      "name": "react",
+      "version": "18.3.1",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "540.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "id": "explore:page:/",
+      "name": "page:/",
+      "assets": {
+        "js": {
+          "sync": [
+            "715.js",
+            "__federation_expose_page:__.js"
+          ],
+          "async": [
+            "540.js",
+            "338.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "page:/"
+    },
+    {
+      "id": "explore:page:/products{/:category}?",
+      "name": "page:/products{/:category}?",
+      "assets": {
+        "js": {
+          "sync": [
+            "715.js",
+            "__federation_expose_page:__products{__:category}?.js"
+          ],
+          "async": [
+            "540.js",
+            "338.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "page:/products{/:category}?"
+    },
+    {
+      "id": "explore:page:/stores",
+      "name": "page:/stores",
+      "assets": {
+        "js": {
+          "sync": [
+            "715.js",
+            "__federation_expose_page:__stores.js"
+          ],
+          "async": [
+            "540.js",
+            "338.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "page:/stores"
+    },
+    {
+      "id": "explore:Recommendations",
+      "name": "Recommendations",
+      "assets": {
+        "js": {
+          "sync": [
+            "715.js",
+            "__federation_expose_Recommendations.js"
+          ],
+          "async": [
+            "540.js",
+            "338.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "Recommendations"
+    },
+    {
+      "id": "explore:Header",
+      "name": "Header",
+      "assets": {
+        "js": {
+          "sync": [
+            "715.js",
+            "__federation_expose_Header.js"
+          ],
+          "async": [
+            "540.js",
+            "338.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "Header"
+    },
+    {
+      "id": "explore:Footer",
+      "name": "Footer",
+      "assets": {
+        "js": {
+          "sync": [
+            "715.js",
+            "__federation_expose_Footer.js"
+          ],
+          "async": [
+            "540.js",
+            "338.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "Footer"
+    },
+    {
+      "id": "explore:StorePicker",
+      "name": "StorePicker",
+      "assets": {
+        "js": {
+          "sync": [
+            "715.js",
+            "__federation_expose_StorePicker.js"
+          ],
+          "async": [
+            "540.js",
+            "338.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "StorePicker"
+    }
+  ]
+}
