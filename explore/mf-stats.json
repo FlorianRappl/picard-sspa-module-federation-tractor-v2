@@ -47,12 +47,12 @@
         }
       },
       "usedIn": [
-        "Footer",
+        "StorePicker",
         "page:/products{/:category}?",
+        "Footer",
         "Header",
         "page:/",
         "Recommendations",
-        "StorePicker",
         "page:/stores"
       ]
     },
@@ -77,12 +77,12 @@
         }
       },
       "usedIn": [
-        "Footer",
+        "StorePicker",
         "page:/products{/:category}?",
+        "Footer",
         "Header",
         "page:/",
         "Recommendations",
-        "StorePicker",
         "page:/stores"
       ]
     }
