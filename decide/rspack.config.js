@@ -46,7 +46,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "checkout",
+      name: "decide",
       filename: "remoteEntry.js",
       exposes: {
         "page:/product/:id": "./src/ProductPage.jsx",
