@@ -20,28 +20,29 @@
       "api": ""
     },
     "globalName": "checkout",
-    "pluginVersion": "0.3.1",
+    "pluginVersion": "2.9.3",
     "publicPath": "auto"
   },
   "shared": [
     {
       "id": "checkout:canvas-confetti",
       "name": "canvas-confetti",
-      "version": "1.9.3",
+      "version": "1.9.4",
       "singleton": true,
-      "requiredVersion": "^1.9.3",
+      "requiredVersion": "^1.9.4",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "59.js"
+            "222.js"
           ]
         },
         "css": {
           "async": [],
           "sync": []
         }
-      }
+      },
+      "fallback": ""
     },
     {
       "id": "checkout:react-dom/client",
@@ -51,18 +52,17 @@
       "requiredVersion": "^18.3.1",
       "assets": {
         "js": {
-          "async": [
-            "512.js"
-          ],
+          "async": [],
           "sync": [
-            "478.js"
+            "207.js"
           ]
         },
         "css": {
           "async": [],
           "sync": []
         }
-      }
+      },
+      "fallback": ""
     },
     {
       "id": "checkout:react",
@@ -74,14 +74,15 @@
         "js": {
           "async": [],
           "sync": [
-            "512.js"
+            "237.js"
           ]
         },
         "css": {
           "async": [],
           "sync": []
         }
-      }
+      },
+      "fallback": ""
     }
   ],
   "remotes": [],
@@ -94,10 +95,7 @@
           "sync": [
             "__federation_expose_page:__checkout__cart.js"
           ],
-          "async": [
-            "512.js",
-            "478.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [
@@ -116,10 +114,7 @@
           "sync": [
             "__federation_expose_page:__checkout__checkout.js"
           ],
-          "async": [
-            "512.js",
-            "478.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [
@@ -138,11 +133,7 @@
           "sync": [
             "__federation_expose_page:__checkout__thanks.js"
           ],
-          "async": [
-            "512.js",
-            "478.js",
-            "59.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [
@@ -161,10 +152,7 @@
           "sync": [
             "__federation_expose_AddToCart.js"
           ],
-          "async": [
-            "512.js",
-            "478.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [
@@ -183,10 +171,7 @@
           "sync": [
             "__federation_expose_MiniCart.js"
           ],
-          "async": [
-            "512.js",
-            "478.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [

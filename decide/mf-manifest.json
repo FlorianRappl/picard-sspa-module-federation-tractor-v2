@@ -20,7 +20,7 @@
       "api": ""
     },
     "globalName": "decide",
-    "pluginVersion": "0.3.5",
+    "pluginVersion": "2.9.3",
     "publicPath": "auto"
   },
   "shared": [
@@ -32,18 +32,17 @@
       "requiredVersion": "^18.3.1",
       "assets": {
         "js": {
-          "async": [
-            "512.js"
-          ],
+          "async": [],
           "sync": [
-            "478.js"
+            "207.js"
           ]
         },
         "css": {
           "async": [],
           "sync": []
         }
-      }
+      },
+      "fallback": ""
     },
     {
       "id": "decide:react",
@@ -55,14 +54,15 @@
         "js": {
           "async": [],
           "sync": [
-            "512.js"
+            "237.js"
           ]
         },
         "css": {
           "async": [],
           "sync": []
         }
-      }
+      },
+      "fallback": ""
     }
   ],
   "remotes": [],
@@ -75,10 +75,7 @@
           "sync": [
             "__federation_expose_page:__product__:id.js"
           ],
-          "async": [
-            "512.js",
-            "478.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [

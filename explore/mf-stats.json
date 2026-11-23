@@ -20,7 +20,7 @@
       "api": ""
     },
     "globalName": "explore",
-    "pluginVersion": "0.3.1",
+    "pluginVersion": "2.9.3",
     "publicPath": "auto"
   },
   "shared": [
@@ -28,15 +28,14 @@
       "singleton": true,
       "requiredVersion": "^18.3.1",
       "shareScope": "default",
+      "import": "react-dom/client",
       "name": "react-dom/client",
       "version": "18.3.1",
       "eager": false,
       "id": "explore:react-dom/client",
       "assets": {
         "js": {
-          "async": [
-            "540.js"
-          ],
+          "async": [],
           "sync": [
             "338.js"
           ]
@@ -47,19 +46,22 @@
         }
       },
       "usedIn": [
-        "StorePicker",
+        "Header",
         "page:/products{/:category}?",
         "Footer",
-        "Header",
         "page:/",
         "Recommendations",
+        "StorePicker",
         "page:/stores"
-      ]
+      ],
+      "usedExports": [],
+      "fallback": ""
     },
     {
       "singleton": true,
       "requiredVersion": "^18.3.1",
       "shareScope": "default",
+      "import": "react",
       "name": "react",
       "version": "18.3.1",
       "eager": false,
@@ -77,14 +79,16 @@
         }
       },
       "usedIn": [
-        "StorePicker",
+        "Header",
         "page:/products{/:category}?",
         "Footer",
-        "Header",
         "page:/",
         "Recommendations",
+        "StorePicker",
         "page:/stores"
-      ]
+      ],
+      "usedExports": [],
+      "fallback": ""
     }
   ],
   "remotes": [],
@@ -101,13 +105,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_page:__.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -127,13 +128,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
-            "__federation_expose_page:__products{__:category}?.js"
+            "685.js",
+            "__federation_expose_page:__products{__:category}_.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -153,13 +151,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_page:__stores.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -179,13 +174,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_Recommendations.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -205,13 +197,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_Header.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -231,13 +220,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_Footer.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -257,13 +243,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_StorePicker.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],

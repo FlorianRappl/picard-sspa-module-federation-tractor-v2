@@ -20,23 +20,24 @@
       "api": ""
     },
     "globalName": "checkout",
-    "pluginVersion": "0.3.1",
+    "pluginVersion": "2.9.3",
     "publicPath": "auto"
   },
   "shared": [
     {
       "singleton": true,
-      "requiredVersion": "^1.9.3",
+      "requiredVersion": "^1.9.4",
       "shareScope": "default",
+      "import": "canvas-confetti",
       "name": "canvas-confetti",
-      "version": "1.9.3",
+      "version": "1.9.4",
       "eager": false,
       "id": "checkout:canvas-confetti",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "59.js"
+            "222.js"
           ]
         },
         "css": {
@@ -46,23 +47,24 @@
       },
       "usedIn": [
         "page:/checkout/thanks"
-      ]
+      ],
+      "usedExports": [],
+      "fallback": ""
     },
     {
       "singleton": true,
       "requiredVersion": "^18.3.1",
       "shareScope": "default",
+      "import": "react-dom/client",
       "name": "react-dom/client",
       "version": "18.3.1",
       "eager": false,
       "id": "checkout:react-dom/client",
       "assets": {
         "js": {
-          "async": [
-            "512.js"
-          ],
+          "async": [],
           "sync": [
-            "478.js"
+            "207.js"
           ]
         },
         "css": {
@@ -71,17 +73,20 @@
         }
       },
       "usedIn": [
-        "MiniCart",
-        "AddToCart",
         "page:/checkout/cart",
+        "AddToCart",
         "page:/checkout/checkout",
+        "MiniCart",
         "page:/checkout/thanks"
-      ]
+      ],
+      "usedExports": [],
+      "fallback": ""
     },
     {
       "singleton": true,
       "requiredVersion": "^18.3.1",
       "shareScope": "default",
+      "import": "react",
       "name": "react",
       "version": "18.3.1",
       "eager": false,
@@ -90,7 +95,7 @@
         "js": {
           "async": [],
           "sync": [
-            "512.js"
+            "237.js"
           ]
         },
         "css": {
@@ -99,12 +104,14 @@
         }
       },
       "usedIn": [
-        "page:/checkout/cart",
-        "AddToCart",
-        "page:/checkout/checkout",
         "MiniCart",
+        "AddToCart",
+        "page:/checkout/cart",
+        "page:/checkout/checkout",
         "page:/checkout/thanks"
-      ]
+      ],
+      "usedExports": [],
+      "fallback": ""
     }
   ],
   "remotes": [],
@@ -114,8 +121,8 @@
       "id": "checkout:page:/checkout/cart",
       "name": "page:/checkout/cart",
       "requires": [
-        "react-dom/client",
-        "react"
+        "react",
+        "react-dom/client"
       ],
       "file": "src/CartPage.jsx",
       "assets": {
@@ -123,10 +130,7 @@
           "sync": [
             "__federation_expose_page:__checkout__cart.js"
           ],
-          "async": [
-            "512.js",
-            "478.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [
@@ -141,8 +145,8 @@
       "id": "checkout:page:/checkout/checkout",
       "name": "page:/checkout/checkout",
       "requires": [
-        "react-dom/client",
-        "react"
+        "react",
+        "react-dom/client"
       ],
       "file": "src/Checkout.jsx",
       "assets": {
@@ -150,10 +154,7 @@
           "sync": [
             "__federation_expose_page:__checkout__checkout.js"
           ],
-          "async": [
-            "512.js",
-            "478.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [
@@ -168,9 +169,9 @@
       "id": "checkout:page:/checkout/thanks",
       "name": "page:/checkout/thanks",
       "requires": [
+        "react",
         "react-dom/client",
-        "canvas-confetti",
-        "react"
+        "canvas-confetti"
       ],
       "file": "src/Thanks.jsx",
       "assets": {
@@ -178,11 +179,7 @@
           "sync": [
             "__federation_expose_page:__checkout__thanks.js"
           ],
-          "async": [
-            "512.js",
-            "478.js",
-            "59.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [
@@ -197,8 +194,8 @@
       "id": "checkout:AddToCart",
       "name": "AddToCart",
       "requires": [
-        "react-dom/client",
-        "react"
+        "react",
+        "react-dom/client"
       ],
       "file": "src/AddToCart.jsx",
       "assets": {
@@ -206,10 +203,7 @@
           "sync": [
             "__federation_expose_AddToCart.js"
           ],
-          "async": [
-            "512.js",
-            "478.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [
@@ -224,8 +218,8 @@
       "id": "checkout:MiniCart",
       "name": "MiniCart",
       "requires": [
-        "react-dom/client",
-        "react"
+        "react",
+        "react-dom/client"
       ],
       "file": "src/MiniCart.jsx",
       "assets": {
@@ -233,10 +227,7 @@
           "sync": [
             "__federation_expose_MiniCart.js"
           ],
-          "async": [
-            "512.js",
-            "478.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [

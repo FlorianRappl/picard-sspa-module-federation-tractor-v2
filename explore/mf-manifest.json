@@ -20,7 +20,7 @@
       "api": ""
     },
     "globalName": "explore",
-    "pluginVersion": "0.3.1",
+    "pluginVersion": "2.9.3",
     "publicPath": "auto"
   },
   "shared": [
@@ -32,9 +32,7 @@
       "requiredVersion": "^18.3.1",
       "assets": {
         "js": {
-          "async": [
-            "540.js"
-          ],
+          "async": [],
           "sync": [
             "338.js"
           ]
@@ -43,7 +41,8 @@
           "async": [],
           "sync": []
         }
-      }
+      },
+      "fallback": ""
     },
     {
       "id": "explore:react",
@@ -62,7 +61,8 @@
           "async": [],
           "sync": []
         }
-      }
+      },
+      "fallback": ""
     }
   ],
   "remotes": [],
@@ -73,13 +73,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_page:__.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -94,13 +91,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
-            "__federation_expose_page:__products{__:category}?.js"
+            "685.js",
+            "__federation_expose_page:__products{__:category}_.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -115,13 +109,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_page:__stores.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -136,13 +127,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_Recommendations.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -157,13 +145,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_Header.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -178,13 +163,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_Footer.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
@@ -199,13 +181,10 @@
       "assets": {
         "js": {
           "sync": [
-            "715.js",
+            "685.js",
             "__federation_expose_StorePicker.js"
           ],
-          "async": [
-            "540.js",
-            "338.js"
-          ]
+          "async": []
         },
         "css": {
           "sync": [],
