@@ -20,8 +20,10 @@ function useSku() {
 
 const ProductPage = ({ id }) => {
   const [sku, setSku] = useSku();
+  console.log('LOAD PRODUCT PAGE', id, sku);
   const { name, variants, highlights = [] } = data.products.find((p) => p.id === id);
   const variant = variants.find((v) => v.sku === sku) || variants[0];
+  console.log('RETRIEVED', name, variants, highlights, variant);
 
   const handleSkuSelect = (ev) => {
     const attr = ev.target.getAttribute('href');
