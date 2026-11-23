@@ -10,14 +10,15 @@
   "author": "Florian Rappl",
   "license": "MIT",
   "dependencies": {
-    "@module-federation/enhanced": "^0.3.1",
-    "canvas-confetti": "^1.9.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "single-spa-react": "^6.0.2"
+    "@module-federation/enhanced": "^2",
+    "canvas-confetti": "^1",
+    "react": "^18",
+    "react-dom": "^18",
+    "single-spa-react": "^6"
   },
   "devDependencies": {
-    "@rspack/cli": "^0.7.5",
-    "@rspack/core": "^0.7.5"
+    "@rspack/cli": "^2",
+    "@rspack/core": "^2",
+    "@rspack/dev-server": "^2"
   }
 }

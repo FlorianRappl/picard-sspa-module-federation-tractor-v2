@@ -17,6 +17,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/i,
+        type: 'css/auto',
+      },
+      {
         test: /\.jpg$/,
         type: "asset",
       },
