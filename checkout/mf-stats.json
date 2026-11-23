@@ -71,11 +71,11 @@
         }
       },
       "usedIn": [
-        "page:/checkout/thanks",
-        "AddToCart",
         "page:/checkout/cart",
+        "AddToCart",
         "page:/checkout/checkout",
-        "MiniCart"
+        "MiniCart",
+        "page:/checkout/thanks"
       ]
     },
     {
@@ -99,11 +99,11 @@
         }
       },
       "usedIn": [
-        "page:/checkout/thanks",
-        "AddToCart",
         "page:/checkout/cart",
+        "AddToCart",
         "page:/checkout/checkout",
-        "MiniCart"
+        "MiniCart",
+        "page:/checkout/thanks"
       ]
     }
   ],
