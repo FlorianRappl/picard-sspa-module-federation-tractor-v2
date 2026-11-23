@@ -71,10 +71,10 @@
         }
       },
       "usedIn": [
-        "page:/checkout/cart",
-        "AddToCart",
-        "page:/checkout/checkout",
         "MiniCart",
+        "AddToCart",
+        "page:/checkout/cart",
+        "page:/checkout/checkout",
         "page:/checkout/thanks"
       ]
     },
